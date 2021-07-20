@@ -1,0 +1,11 @@
+- zakładki menu odsyłają do odpowiednich sekcji płynnym scrollem
+- przycisk kontakt odsyła do kontaktu
+- niech w miejscu głównego zdjęcia na samej górze będzie slider, który będzie
+ automatycznie zmieniał slajdy co parę sekund, ale można będzie ręcznie też zmieniać slajdy
+- sekcja Our Clients Say jest sliderem z opiniami
+- w sekcji Frequently asked questions po wybraniu innej zakładki, w panelu po prawej wyświetla sie inny tekst
+- formularz na samym dole ma walidację i wysyła wiadomość
+- strona nie korzysta z żadnych zewnętrznych bibliotek do animacji i tym podobnych
+- strona responsywna- w menu znajduje się przycisk zmiany kontrastu,
+ np. ikonka oka - po kliknięciu kolory strony zmieniają się tak, aby teksty miały kolor żółty, a tło było czarne.
+ Po powtórnym kliknięciu następnuje przełączenie na oryginalne kolory
