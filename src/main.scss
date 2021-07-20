@@ -1,3 +1,76 @@
-body {
-  background: red;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#section-header {
+  width: 100vw;
+
+
+  header{
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    h1{
+      text-transform: uppercase;
+
+      span{
+        color: #E8BF5D;
+      }
+    }
+
+    menu{
+      display: flex;
+      font-family: 'Open Sans';
+      font-size: 1rem;
+
+      li {
+        display: table-cell;
+        position: relative;
+        padding: 15px 0;
+      }
+
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.08em;
+        color: #000;
+
+        display: inline-block;
+        padding: 15px 15px;
+        position: relative;
+      }
+
+      a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 5px;
+        left: 50%;
+        position: absolute;
+        background: #E8BF5D;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+
+      a:hover:after {
+        width: 100%;
+        left: 0;
+      }
+
+    }
+  }
+}
+
+#section-photo-slider {
+  height: 92vh;
+  width: 100vw;
+  background: linear-gradient(rgba(14, 13, 13, 0.801), rgba(14, 13, 13, 0.801)), url("./img/4lawyer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
