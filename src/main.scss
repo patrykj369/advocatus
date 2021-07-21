@@ -16,7 +16,7 @@ body {
   width: 100vw;
 
   header{
-    height: 8vh;
+    height: 5rem;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -27,7 +27,6 @@ body {
 
       span{
         color: #E8BF5D;
-        font-size: 2.5rem;
       }
     }
 
@@ -351,9 +350,39 @@ body {
 }
 
 .our-clients-container-text{
+  position: relative;
+  padding: 1rem 0;
   max-width: 40vw;
 
   p{
     font-family: 'Open sans', sans-serif;
+    line-height: 2rem;
+    font-size: 1rem;
   }
+
+  h1{
+    font-weight: 100;
+    padding: 2rem 0 1rem 0;
+  }
+
+  span{
+    font-size: 1rem;
+    font-family: "Open sans", sans-serif;
+  }
+
+  .our-clients-quote{
+    position: absolute;
+    left: -4.5rem;
+    top: 2rem;
+    font-family: serif;
+    font-size: 8rem;
+    color: #707070;
+  }
+}
+
+#section-recent-publications{
+  min-height: 50vh;
+  padding: 4vh 15vw;
+  display: flex;
+  align-items: center;
 }
