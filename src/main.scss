@@ -4,9 +4,16 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 #section-header {
   width: 100vw;
-
 
   header{
     height: 8vh;
@@ -20,12 +27,13 @@
 
       span{
         color: #E8BF5D;
+        font-size: 2.5rem;
       }
     }
 
     menu{
       display: flex;
-      font-family: 'Open Sans';
+      font-family: 'Open Sans', sans-serif;
       font-size: 1rem;
 
       li {
@@ -70,7 +78,282 @@
 #section-photo-slider {
   height: 92vh;
   width: 100vw;
-  background: linear-gradient(rgba(14, 13, 13, 0.801), rgba(14, 13, 13, 0.801)), url("./img/4lawyer.jpg");
+  background: linear-gradient(rgba(14, 13, 13, 0.801), rgba(14, 13, 13, 0.801)), url("./img/5lawyer.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#name-surname-button-container{
+  width: 100vw;
+  position: absolute;
+  bottom: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  #name-surname-container{
+    color: #fff;
+    padding: 0 8rem;
+    h1{
+      font-size: 3.5rem;
+      font-weight: 100;
+    }
+
+    p{
+      font-family: "Open sans", sans-serif;
+      font-size: 1.4rem;
+    }
+  }
+
+  #name-surname-container::after{
+    content: "";
+    display: block;
+    height: 60px;
+    margin-top: -70px;
+    margin-left: -20px;
+    background: #E8BF5D;
+    width: 2px;
+  }
+
+  #name-surname-button{
+    padding: 0 8rem;
+
+    button{
+      height: 2rem;
+      padding: 1.2rem 2rem;
+      border-radius: 2rem;
+      border: none;
+      display: flex;
+      background-color: #E8BF5D;
+      align-items: center;
+      font-family: serif;
+      font-size: 1rem;
+    }
+
+    button:hover{
+      background-color: #e8be5d9d;
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+
+}
+
+
+#section-about-us{
+  min-height: 40vh;
+  padding: 4vh 15vw;
+  display: flex;
+  align-items: center;
+}
+
+.text-section-header{
+  position: relative;
+
+  h1{
+    font-size: 2rem;
+    font-weight: 100;
+    padding: .5rem;
+  }
+  p{
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: .5rem;
+    line-height: 1.5rem;
+    span{
+      display: block;
+    }
+  }
+}
+
+.text-section-header::after{
+  content: "";
+  display: block;
+  height: 6rem;
+  margin-top: -6.5rem;
+  margin-left: -1rem;
+  background: #E8BF5D;
+  width: 2px;
+}
+
+.text-section-bg-number{
+  position: absolute;
+  bottom: 1.6rem;
+  left: -1rem;
+  p{
+    font-size: 9rem;
+    color: rgba(10, 10, 10, 0.05);
+  }
+}
+
+#about-us-info{
+  margin-left: -1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  margin-top: 6vh;
+}
+
+#about-us-history{
+
+  h1{
+    font-weight: 100;
+    padding: 1rem 0;
+  }
+
+  .about-us-year{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    font-family: 'Open sans', sans-serif;
+
+    .about-us-year-header{
+      min-width: 6rem;
+      p{
+        font-weight: 600;
+        font-size: 1.4rem;
+      }
+
+    }
+  }
+}
+
+#about-us-expertise{
+
+  h1{
+    font-weight: 100;
+    padding: 1rem 0;
+  }
+
+  p{
+    line-height: 1.8rem;
+    padding: .5rem 0;
+    font-family: 'Open sans', sans-serif;
+  }
+}
+
+// section Practis Area
+
+.text-section-bg-number-night-theme{
+  P{
+    color:rgba(255, 255, 255, 0.08);
+  }
+}
+
+#section-practis-area{
+  min-height: 50vh;
+  background-color: #111111;
+  color: #fff;
+  padding: 4vh 15vw;
+  display: flex;
+  align-items: center;
+}
+
+#section-practis-text-container{
+  padding: 3rem 0;
+}
+
+
+.practis-text-row{
+  display: flex;
+  position: relative;
+}
+
+.practis-single-text-area{
+  padding: 1rem 5rem;
+
+  h1{
+    font-weight: 100;
+    padding-bottom: 1rem;
+  }
+
+  p{
+    font-family: 'Open sans', sans-serif;
+    line-height: 1.8rem;
+  }
+}
+
+.practis-single-text-area::after{
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2rem;
+  width: 1rem;
+  top: 1.3rem;
+  margin-left: -2rem;
+  border: 2px solid #E8BF5D;
+}
+
+// section Meet Our Attorney
+
+#section-meet{
+  min-height: 50vh;
+  padding: 4vh 15vw;
+  display: flex;
+  align-items: center;
+}
+
+#meet-photos-container{
+  padding: 3rem 0;
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.meet-single-person-text{
+  padding: 1rem 0;
+  line-height: 2rem;
+  h1{
+    font-weight: 100;
+  }
+
+  p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9rem;
+  }
+}
+
+// section Our Clients Say
+#section-our-clients{
+  min-height: 50vh;
+  background-color: #111111;
+  color: #fff;
+  padding: 4vh 15vw;
+  display: flex;
+  align-items: center;
+}
+
+.our-clients-container{
+  width: 70vw;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-clients-container-photo{
+  position: relative;
+
+}
+
+.our-clients-orange-div{
+  width: 370px;
+  height: 305px;
+  background-color: #E8BF5D;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.our-clients-img{
+  position: relative;
+  z-index: 100;
+}
+
+.our-clients-container-text{
+  max-width: 40vw;
+
+  p{
+    font-family: 'Open sans', sans-serif;
+  }
 }
