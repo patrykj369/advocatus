@@ -80,6 +80,7 @@ body {
   background: linear-gradient(rgba(14, 13, 13, 0.801), rgba(14, 13, 13, 0.801)), url("./img/5lawyer.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 #name-surname-button-container{
@@ -298,8 +299,13 @@ body {
   width: 70vw;
   display: flex;
   justify-content: space-between;
-}
 
+}
+.meet-single-person{
+  img{
+    width: 15vw;
+  }
+}
 .meet-single-person-text{
   padding: 1rem 0;
   line-height: 2rem;
@@ -380,9 +386,125 @@ body {
   }
 }
 
+//Recent Publications Section
+
 #section-recent-publications{
   min-height: 50vh;
   padding: 4vh 15vw;
   display: flex;
   align-items: center;
+
+}
+
+.recent-publications-container{
+  padding: 5vh 0;
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recent-publications-single-container{
+  width: 20vw;
+  img{
+    width: 20vw;
+  }
+}
+
+.single-publication-text-container{
+  padding: 1rem 0;
+
+  h1{
+    font-weight: 100;
+  }
+
+}
+
+.single-publication-author-date{
+  display: flex;
+  justify-content: space-between;
+  padding: .8rem 0;
+
+  p{
+    font-family: 'Open sans', sans-serif;
+    font-style: italic;
+  }
+}
+
+.single-publication-text-content{
+  font-family: 'Open sans', sans-serif;
+  line-height: 2rem;
+}
+
+.single-publication-comment-share{
+  display: flex;
+  width: 20vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+
+  img{
+    width: 1rem;
+  }
+  p{
+    font-size: 1.1rem;
+    font-family: 'Open sans', sans-serif;
+  }
+}
+
+
+//section Frequently  Asked Questions
+
+#section-frequently{
+  min-height: 50vh;
+  background-color: #111111;
+  color: #fff;
+  padding: 4vh 15vw;
+  display: flex;
+  align-items: center;
+}
+
+.section-frequently-container{
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+}
+
+.section-frequently-single-question{
+  display: flex;
+  min-height: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #E8BF5D;
+  padding: 1.5rem 0 1rem 0;
+  img{
+    width: 1.5rem;
+  }
+
+  p{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Open sans', sans-serif;
+  }
+
+  p:hover{
+    cursor: pointer;
+  }
+
+  p:active{
+    color:#E8BF5D;
+  }
+}
+
+.section-frequently-answer-text{
+  min-height: 100%;
+  width: 100%;
+  background-color: #E8BF5D;
+  color: #000;
+
+  padding: 3vw;
+  font-family: 'Open sans', sans-serif;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
 }
