@@ -322,7 +322,10 @@ body {
 // section Our Clients Say
 #section-our-clients{
   min-height: 50vh;
-  background-color: #111111;
+  // background-color: #111111;
+  background:linear-gradient(rgba(14, 13, 13, 0.9), rgba(14, 13, 13, 0.9)), url("./img/bg1.png");
+  background-size: cover;
+  background-position: center;
   color: #fff;
   padding: 4vh 15vw;
   display: flex;
@@ -332,8 +335,10 @@ body {
 .our-clients-container{
   width: 70vw;
   padding: 4rem 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3vw;
+  //justify-content: space-between;
 }
 
 .our-clients-container-photo{
@@ -380,10 +385,10 @@ body {
 
   .our-clients-quote{
     position: absolute;
-    left: -4.5rem;
-    top: 2rem;
+    left: -4.5vw;
+    top: 2vw;
     font-family: serif;
-    font-size: 8rem;
+    font-size: 8vw;
     color: #707070;
   }
 }
@@ -519,11 +524,14 @@ body {
 }
 
 .section-contact-container{
-  padding: 2rem 0;
-  width: 70vw;
+  margin: 3vw 0 3vw 10vw;
+  padding: 4vw 2vw 4vw 4vw;
+  width: 60vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
+
+  box-shadow: 0 0 1em rgba(10, 10, 10, 0.1);
 }
 
 .section-contact-form-container{
@@ -536,12 +544,12 @@ body {
     align-items: center;
     justify-content: center;
 
-    input{
+    .contact-form-input{
       width: 100%;
       margin: 1vh 0;
       padding: .5rem 0;
       border: none;
-      border-bottom: 1px solid #E8BF5D;
+      border-bottom: 1px solid rgba(10, 10, 10, 0.19);
       font-style: italic;
     }
   }
@@ -571,4 +579,58 @@ body {
   height: 22vw;
   position: relative;
   z-index: 100;
+}
+
+.contact-submit-form{
+  margin-top: 2rem;
+  width: 8rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 3rem;
+  background-color: #E8BF5D;
+  align-self: start;
+  font-family: serif;
+  font-size: 1rem;
+}
+
+//footer
+
+
+#section-footer{
+  min-height: 6vh;
+  background-color: #111111;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.section-footer-text{
+  p{
+    color:rgba(255, 255, 255, 0.6);
+    font-size: 1.3rem;
+  }
+
+  .c-text{
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .symu-text{
+    color: #fff;
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.2rem;
+  }
+
+}
+
+.section-footer-images{
+  img{
+    height: 1.3rem;
+    margin: 0 .3vw;
+  }
+
+  img:hover{
+    cursor: pointer;
+  }
 }
