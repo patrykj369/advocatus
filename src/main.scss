@@ -73,17 +73,18 @@ body {
     }
   }
 }
-
+//slider photos
 #section-photo-slider {
   height: 92vh;
   width: 100vw;
+  position: relative;
   background: linear-gradient(rgba(14, 13, 13, 0.801), rgba(14, 13, 13, 0.801)), url("./img/5lawyer.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-#name-surname-button-container{
+.name-surname-button-container{
   width: 100vw;
   position: absolute;
   bottom: 15vh;
@@ -91,7 +92,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  #name-surname-container{
+  .name-surname-container{
     color: #fff;
     padding: 0 8rem;
     h1{
@@ -105,7 +106,7 @@ body {
     }
   }
 
-  #name-surname-container::after{
+  .name-surname-container::after{
     content: "";
     display: block;
     height: 60px;
@@ -115,7 +116,7 @@ body {
     width: 2px;
   }
 
-  #name-surname-button{
+  .name-surname-button{
     padding: 0 8rem;
 
     button{
@@ -139,9 +140,41 @@ body {
 
 }
 
+.name-surname-container-disactive{
+  display: none;
+}
 
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 15px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+//section about us
 #section-about-us{
-  min-height: 40vh;
+  min-height: 50vh;
   padding: 4vh 15vw;
   display: flex;
   align-items: center;
@@ -155,14 +188,17 @@ body {
     font-weight: 100;
     padding: .5rem;
   }
+
   p{
     font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
     padding: .5rem;
     line-height: 1.5rem;
+
     span{
       display: block;
     }
+
   }
 }
 
@@ -593,6 +629,9 @@ body {
   font-size: 1rem;
 }
 
+.contact-submit-form:hover{
+  cursor: pointer
+}
 //footer
 
 
