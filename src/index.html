@@ -23,38 +23,56 @@
     </section>
     <section id="section-photo-slider">
 
-      <div id="photo-slider-1" class="name-surname-button-container">
+      <div id="photo-slider-1" class="name-surname-button-container mySlides fade">
+        <div class="slider-text-container">
           <div class="name-surname-container">
             <h1>Adam Suaerez</h1>
             <p>Lawyer</p>
           </div>
           <div class="name-surname-button">
-            <button>Contact Me</button>
+            <button class="btn-contact-me">Contact Me</button>
           </div>
+        </div>
+        <div class="color-test">
+          <img src="./img/5lawyer.png" alt="slider"/>
+        </div>
+
       </div>
 
-      <div id="photo-slider-2" class="name-surname-button-container name-surname-container-disactive">
-        <div class="name-surname-container">
-          <h1>Adam Suaerezik</h1>
-          <p>Lawyer</p>
+      <div id="photo-slider-1" class="name-surname-button-container mySlides fade">
+        <div class="slider-text-container">
+          <div class="name-surname-container">
+            <h1>Piter Jackson</h1>
+            <p>Lawyer</p>
+          </div>
+          <div class="name-surname-button">
+            <button class="btn-contact-me">Contact Me</button>
+          </div>
         </div>
-        <div class="name-surname-button">
-          <button onclick="plusSlides()">Contact Me</button>
+        <div class="color-test">
+          <img src="./img/6lawyer.jpg" alt="slider"/>
         </div>
+
       </div>
 
-      <div id="photo-slider-3" class="name-surname-button-container name-surname-container-disactive">
-        <div class="name-surname-container">
-          <h1>Piotr Nowak</h1>
-          <p>Lawyer</p>
+      <div id="photo-slider-1" class="name-surname-button-container mySlides fade">
+        <div class="slider-text-container">
+          <div class="name-surname-container">
+            <h1>John Cruoser</h1>
+            <p>Lawyer</p>
+          </div>
+          <div class="name-surname-button">
+            <button class="btn-contact-me">Contact Me</button>
+          </div>
         </div>
-        <div class="name-surname-button">
-          <button onclick="plusSlides()">Contact Me</button>
+        <div class="color-test">
+          <img src="./img/7lawyer.jpg" alt="slider"/>
         </div>
+
       </div>
 
-      <a class="prev">&#10094;</a>
-      <a class="next">&#10095;</a>
+      <a class="prev" >&#10094;</a>
+      <a class="next" >&#10095;</a>
 
     </section>
     <section id="section-about-us">
@@ -417,12 +435,27 @@
 
         <div class="section-contact-container">
           <div class="section-contact-form-container">
-            <form>
-              <input type="text" placeholder="Enter your name..." class="contact-form-input"/>
-              <input type="email" placeholder="Enter your email..." class="contact-form-input"/>
-              <input type="tel" placeholder="Enter your phone..." class="contact-form-input"/>
-              <input type="text" placeholder="Enter your message..." class="contact-form-input"/>
-              <input type="submit" value="Send Message" class="contact-submit-form"/>
+            <form id="form" onsubmit="">
+              <div class="inputD">
+                <input type="text" placeholder="Enter your name..." id="inp-name" class="contact-form-input"/>
+                <p id="pName">Name cannot be empty</p>
+              </div>
+              <div class="inputD">
+                <input type="email" placeholder="Enter your email..." id="inp-mail" class="contact-form-input"/>
+                <p id="pEmail">Email cannot be empty</p>
+              </div>
+              <div class="inputD">
+                <input type="tel" placeholder="Enter your phone..." id="inp-phone" class="contact-form-input"/>
+                <p id="pPhone">Phone number cannot be empty</p>
+              </div>
+              <div class="inputD">
+                <input type="text" placeholder="Enter your message..." id="inp-text" class="contact-form-input"/>
+                <p id="pMessage">Message cannot be empty</p>
+              </div>
+              <div id="success-form">
+                <p>Your message has been sent</p>
+              </div>
+              <input type="submit" id="btn-submit" value="Send Message" class="contact-submit-form"/>
             </form>
 
           </div>
